@@ -49,7 +49,7 @@ var fontShirokuma;
 
 function preload() {
 
-  fontShirokuma = loadFont('assets/001Shirokuma-Regular.otf');
+  fontShirokuma = loadFont('assets/geometric.ttf');
   // Get the most recent earthquake in the database
   let apiKey = '859dd915fbeed6d12c75e1ad595bf2ae';
   let city = 'atlanta';
@@ -58,6 +58,7 @@ function preload() {
 }
 
 function setup() {
+  textAlign(CENTER);
   textFont(fontShirokuma);
   createCanvas(windowWidth, windowHeight-10);
   angleMode(RADIANS);
